@@ -1,3 +1,34 @@
+Creator Coin.
+
+NOTE: currently, creator coin is on the develop branch. It will later be moved to master.
+
+There are two trusted nodes which will be deployed shortly.
+
+The master node is running.
+
+To install a node for development purposes:
+
+1. Install go and set paths.
+1. create dirctory ~/go/src/skycoin/
+1. cd ~/go/src/skycoin/
+1. git clone https://github.com/creator-coin/skycoin.git
+1. cd skycoin
+1. git status
+1. check you are develop branch
+1. go install ~/go/src/github.com/skycoin/skycoin/cmd/creatorcoin/creatorcoin.go 
+1. run the node with your requird parameters e.g:
+
+    nohup creatorcoin&
+
+or
+
+    creatorcoin -launch-browser=true -enable-gui=true -enable-wallet-api=true    -gui-dir="$GOPATH/src/github.com/skycoin/skycoin//src/gui/static/"
+
+
+
+
+
+
 ![skycoin logo](https://user-images.githubusercontent.com/26845312/32426705-d95cb988-c281-11e7-9463-a3fce8076a72.png)
 
 # Skycoin
