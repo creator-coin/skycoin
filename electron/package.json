@@ -1,13 +1,13 @@
 {
     "name": "creatorcoin",
     "productName": "CreatorCoin",
-    "author": "creatorcoin",
+    "author": "CreatorCoin",
     "main": "src/electron-main.js",
     "version": "0.25.0-rc1",
-    "description": "skycoin wallet",
+    "description": "CreatorCoin wallet",
     "license": "MIT",
     "build": {
-        "appId": "org.skycoin.skycoin",
+        "appId": "org.creator-coin.creator-coin",
         "nsis": {
             "oneClick": false,
             "allowToChangeInstallationDirectory": true
