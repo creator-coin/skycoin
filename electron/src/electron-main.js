@@ -45,10 +45,10 @@ var skycoin = null;
 
 function startSkycoin() {
   if (!dev) {
-    console.log('Starting skycoin from electron');
+    console.log('Starting creatorCoin from electron');
 
     if (skycoin) {
-      console.log('Skycoin already running');
+      console.log('CreatorCoin already running');
       app.emit('skycoin-ready');
       return
     }
@@ -122,14 +122,14 @@ function startSkycoin() {
 
     skycoin.on('close', (code) => {
       // log.info('Skycoin closed');
-      console.log('Skycoin closed');
+      console.log('CreatorCoin closed');
       showError();
       reset();
     });
 
     skycoin.on('exit', (code) => {
       // log.info('Skycoin exited');
-      console.log('Skycoin exited');
+      console.log('CreatorCoin exited');
       showError();
       reset();
     });
@@ -163,7 +163,7 @@ function createWindow(url) {
   win = new BrowserWindow({
     width: 1200,
     height: 900,
-    title: 'Skycoin',
+    title: 'CreatorCoin',
     icon: iconPath,
     nodeIntegration: false,
     webPreferences: {
@@ -225,7 +225,7 @@ function createWindow(url) {
 
   // create application's main menu
   var template = [{
-    label: 'Skycoin',
+    label: 'CreatorCoin',
     submenu: [
       { label: 'Quit', accelerator: 'Command+Q', click: function() { app.quit(); } }
     ]

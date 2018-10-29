@@ -1,7 +1,7 @@
 {
-    "name": "skycoin",
-    "productName": "Skycoin",
-    "author": "skycoin",
+    "name": "creatorcoin",
+    "productName": "CreatorCoin",
+    "author": "creatorcoin",
     "main": "src/electron-main.js",
     "version": "0.25.0-rc1",
     "description": "skycoin wallet",
